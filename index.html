@@ -12,66 +12,54 @@
 
 body {
     margin: 0;
-    min-height: 100vh;
+    background: #f5f5f5;
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(135deg, #b00000, #e00000);
-    display: flex;
-    justify-content: center;
-    padding: 20px;
 }
 
 .container {
     width: 100%;
-    max-width: 600px;
+    max-width: 900px;
+    margin: 0 auto;
     background: white;
-    border-radius: 24px;
-    overflow: hidden;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.30);
 }
 
-.logo {
-    width: 100%;
+.logo-link {
     display: block;
+    width: 100%;
 }
 
-.content {
-    padding: 25px;
+.logo-link img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.info {
+    padding: 30px 20px 40px;
     text-align: center;
 }
 
-h1 {
-    color: #b00000;
-    margin: 0 0 10px;
-    font-size: 25px;
+.info h1 {
+    color: #b40000;
+    font-size: 30px;
+    margin: 0 0 15px;
 }
 
-p {
+.info p {
     color: #555;
+    font-size: 19px;
     line-height: 1.5;
-    margin-bottom: 25px;
+    margin: 0;
 }
 
-.button {
-    display: block;
-    width: 100%;
-    padding: 18px;
-    background: #c90000;
-    color: white;
-    text-decoration: none;
-    border-radius: 15px;
-    font-size: 18px;
-    font-weight: bold;
-    box-shadow: 0 5px 15px rgba(180,0,0,0.25);
-}
+@media (max-width: 600px) {
+    .info h1 {
+        font-size: 26px;
+    }
 
-.button:hover {
-    background: #a00000;
-}
-
-.footer {
-    margin-top: 20px;
-    color: #999;
-    font-size: 12px;
+    .info p {
+        font-size: 17px;
+    }
 }
 </style>
 </head>
@@ -80,31 +68,23 @@ p {
 
 <div class="container">
 
-    <img
-        class="logo"
-        src="gesar-controle-medicacao.jpeg"
-        alt="GESAR - Controle de Medicação">
+    <a
+        class="logo-link"
+        href="https://docs.google.com/spreadsheets/d/1kQoi5-4G1BKpcYz3dS6oJOv7FnjrXzpm/edit?usp=drivesdk&ouid=105851070055766953241&rtpof=true&sd=true"
+        target="_blank"
+    >
+        <img
+            src="gesar-controle-medicacao.jpeg"
+            alt="GESAR - Controle de Medicação"
+        >
+    </a>
 
-    <div class="content">
-
+    <div class="info">
         <h1>Controle de Medicação</h1>
-
         <p>
-            Acesse o controle oficial de medicamentos
-            da equipe GESAR.
+            Toque na imagem acima para acessar o controle oficial
+            de medicamentos da equipe GESAR.
         </p>
-
-        <a
-            class="button"
-            href="https://docs.google.com/spreadsheets/d/1kQoi5-4G1BKpcYz3dS6oJOv7FnjrXzpm/edit?usp=drivesdk&ouid=105851070055766953241&rtpof=true&sd=true"
-            target="_blank">
-            📋 ACESSAR CONTROLE DE MEDICAÇÃO
-        </a>
-
-        <div class="footer">
-            GESAR • Equipe de Socorristas
-        </div>
-
     </div>
 
 </div>
